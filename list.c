@@ -41,6 +41,8 @@ int The_number_of_node()
 void Print_middle()
 {
     node *ptr = NULL;
+
+    printf("Print middle: ");
     
     int index = The_number_of_node() / 2;
     if (The_number_of_node() % 2 == 1)
@@ -66,6 +68,8 @@ void Print_all()
     node *ptr = NULL;
     ptr = head;
     
+    printf("Print all list: ");
+    
     while (ptr != NULL)
     {
         printf("%d ", ptr->value);
@@ -77,6 +81,8 @@ void Print_all()
 void Print_rev()
 {
     node *ptr = head;
+    
+    printf("Print revers oder: ");
     
     for (int i = The_number_of_node(); i>0; i--)
     {
