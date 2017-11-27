@@ -8,9 +8,9 @@ struct node
     //struct node *before;
 };
 
-void Makenode(int num);
+void Make_node(int num);
 int The_number_of_node();
-void Printmidle();
-void Printall();
-void Deleteoddnode();
-void Printrev();
+void Print_middle();
+void Print_all();
+void Delete_odd_node();
+void Print_rev();
