@@ -27,3 +27,8 @@ when there is not existing list, make new node and make new list
  
 6. void Deleteoddnode()
  it delete odd_th nodes in list (ex:1, 3, 5, 7 ,9 th nodes)
+
+
+data type of node is struct and it consist of integer value, struct node pointer next
+
+it is simple struct of linked_list
