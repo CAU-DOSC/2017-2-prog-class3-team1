@@ -3,7 +3,7 @@
 node *head;
 node *tail;
 
-void Makenode(int num)
+void Make_node(int num)
 {
     node *newnode = (node*)malloc(sizeof(node));
     
@@ -38,7 +38,7 @@ int The_number_of_node()
     return count;
 }
 
-void Printmidle()
+void Print_middle()
 {
     node *ptr = NULL;
     
@@ -61,7 +61,7 @@ void Printmidle()
     }
 }
 
-void Printall()
+void Print_all()
 {
     node *ptr = NULL;
     ptr = head;
@@ -74,7 +74,7 @@ void Printall()
     printf("\n");
 }
 
-void Printrev()
+void Print_rev()
 {
     node *ptr = head;
     
@@ -92,7 +92,7 @@ void Printrev()
 }
 
 
-void Deleteoddnode()
+void Delete_odd_node()
 {
     node *ptr = head;
     node *ptrtemp = NULL;
