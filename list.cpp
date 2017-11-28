@@ -64,7 +64,7 @@ void Print_middle()
 			cur = cur->next;
 		}
 		printf("print middle:%d %d\n", cur->value, cur->next->value);
-	}
+	}// «Ï«Ï
 
 }
 void Print_all()
