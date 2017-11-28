@@ -1,13 +1,11 @@
 #include "list.h"
 
-node *head;
 node *tail;
 
 LINK createNode(int n)
 {
 	LINK cur;
 	cur = (LINK)malloc(sizeof(NODE));
-	cur->value = (int *)malloc(sizeof(int));
 	cur->value = n;
 	cur->next = NULL;
 
@@ -43,7 +41,7 @@ int The_number_of_node(LINK head)
 }
 
 
-void Print_middle()
+void Print_middle(LINK head)
 {
 	node *cur;
 	int count = The_number_of_node(LINK head);
