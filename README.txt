@@ -1,4 +1,4 @@
-# README file for TEAM[3,1]:
+﻿# README file for TEAM[3,1]:
 
 This text file describes brief but precise and complete specification of project including:
 - funtion descriptions: name, input/output parameters
@@ -44,3 +44,4 @@ it is simple struct of linked_list
 	 yangban123 Deleteoddnode()
 	 jangdong-hun
 	 Yangsuyeong Create and Append node
+hi !~
