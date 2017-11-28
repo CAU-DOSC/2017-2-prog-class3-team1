@@ -84,13 +84,14 @@ void Print_all()
 
 void Print_rev()
 {
+    int count = The_number_of_node();
     node *ptr = head;
     
     printf("Print revers oder: ");
     
-    for (int i = The_number_of_node(); i>0; i--)
+    for (int j = 1; j<=count; j++)
     {
-        for(int j=i; j>1; j--)
+        for(int i=0; i<(count-j); i++)
         {
             ptr = ptr->next;
         }
