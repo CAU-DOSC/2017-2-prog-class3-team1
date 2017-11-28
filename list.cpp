@@ -3,26 +3,30 @@
 node *head;
 node *tail;
 
-void Make_node(int num)
+LINK createNode(int n)
 {
-    node *newnode = (node*)malloc(sizeof(node));
-    
-    newnode->value = num;
-    newnode->next = NULL;
-    //newnode->before = NULL;
-    
-    if (head == NULL)
-    {
-        head = newnode;
-        tail = newnode;
-    }
-    
-    else
-    {
-        //newnode->before = tail;
-        tail->next = newnode;
-        tail = newnode;
-    }
+	LINK cur;
+	cur = (LINK)malloc(sizeof(NODE));
+	cur->value = (int *)malloc(sizeof(int));
+	cur->value = n;
+	cur->next = NULL;
+
+	return cur;
+}
+
+LINK append(LINK head, LINK cur)
+{
+	LINK nextnode = head;
+	if (head == NULL)
+	{
+		head = cur;
+		return head;
+	}
+	while (nextnode->next != NULL)
+		nextnode = nextnode->next;
+	nextnode->next = cur;
+
+	return head;
 }
 
 int The_number_of_node()

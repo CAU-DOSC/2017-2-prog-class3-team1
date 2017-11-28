@@ -6,7 +6,9 @@ struct node
     int value;
     struct node *next;
     //struct node *before;
-};
+}; typedef NODE;
+typedef NODE *LINK;
+
 
 void Make_node(int num);
 int The_number_of_node();
