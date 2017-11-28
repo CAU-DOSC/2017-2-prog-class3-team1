@@ -40,7 +40,7 @@ it is simple struct of linked_list
  
  	 UEAI Print_all()
 	 msyounge
-	 kangmyoungseok
+	 kangmyoungseok middle print
 	 yangban123 Deleteoddnode()
 	 jangdong-hun
 	 Yangsuyeong Create and Append node
