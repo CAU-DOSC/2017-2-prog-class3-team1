@@ -38,7 +38,7 @@ it is simple struct of linked_list
  중간값 출력, 입력값 출력, 역순 출력, 홀수 번째 정수 삭제 후 출력, 또 이들을 출력해내는 함수를 통해 각각의 결과 값을 출력한다. 
  
  
- 	 UEAI	UEA
+ 	 UEAI Print_all()
 	 msyounge
 	 kangmyoungseok
 	 yangban123 Deleteoddnode()
