@@ -43,4 +43,4 @@ it is simple struct of linked_list
 	 kangmyoungseok
 	 yangban123 Deleteoddnode()
 	 jangdong-hun
-	 Yangsuyeong
+	 Yangsuyeong Create and Append node
