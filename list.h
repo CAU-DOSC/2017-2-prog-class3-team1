@@ -6,13 +6,14 @@ struct node
     int value;
     struct node *next;
     //struct node *before;
-}; typedef NODE;
-typedef NODE *LINK;
+};
 
+typedef node* LINK;
 
-void Make_node(int num);
-int The_number_of_node();
-void Print_middle();
-void Print_all();
-void Delete_odd_node();
-void Print_rev();
+LINK createNode(int n);
+LINK append(LINK head, LINK cur);
+int The_number_of_node(LINK head);
+void Print_middle(LINK head);
+void Print_all(LINK head);
+void Delete_odd_node(struct node* head, int index);
+void Print_rev(LINK head);
