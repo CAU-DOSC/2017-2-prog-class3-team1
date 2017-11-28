@@ -41,6 +41,6 @@ it is simple struct of linked_list
  	 UEAI	UEA
 	 msyounge
 	 kangmyoungseok
-	 yangban123
+	 yangban123 Deleteoddnode()
 	 jangdong-hun
 	 Yangsuyeong
