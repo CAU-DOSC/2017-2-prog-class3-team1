@@ -32,3 +32,6 @@ when there is not existing list, make new node and make new list
 data type of node is struct and it consist of integer value, struct node pointer next
 
 it is simple struct of linked_list
+
+ Code Summary
+ ctrl-z가 입력될 때까지 정수를 입력 받아 node에 저장하여 linked list를 형성한다. 이 후 중간값 출력, 입력값 출력, 역순 출력, 홀수 번째 정수 삭제 후 출력, 또 이들을 출력해내는 함수를 통해 각각의 결과 값을 출력한다. 
