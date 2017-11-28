@@ -29,7 +29,7 @@ LINK append(LINK head, LINK cur)
 	return head;
 }
 
-int The_number_of_node()
+int The_number_of_node(LINK head)
 {
     node *countptr = head;
     int count=0;
@@ -46,7 +46,7 @@ int The_number_of_node()
 void Print_middle()
 {
 	node *cur;
-	int count = The_number_of_node();
+	int count = The_number_of_node(LINK head);
 	if (count % 2)
 	{
 		count /= 2;
@@ -55,7 +55,7 @@ void Print_middle()
 			cur = cur->next;
 		}
 		printf("print middle:%d\n", cur->value);
-	}                  //»¶ºˆ¿Ã∏È.
+	}                  //√à¬¶¬º√∂√Ä√å¬∏√©.
 	else
 	{
 		count = count / 2 - 1;
@@ -64,10 +64,10 @@ void Print_middle()
 			cur = cur->next;
 		}
 		printf("print middle:%d %d\n", cur->value, cur->next->value);
-	}// «Ï«Ï
+	}// √á√¨√á√¨
 
 }
-void Print_all()
+void Print_all(LINK head)
 {
     node *ptr = NULL;
     ptr = head;
@@ -82,9 +82,9 @@ void Print_all()
     printf("\n");
 }
 
-void Print_rev()
+void Print_rev(LINK head)
 {
-    int count = The_number_of_node();
+    int count = The_number_of_node(LINK head);
     node *ptr = head;
     
     printf("Print revers oder: ");
