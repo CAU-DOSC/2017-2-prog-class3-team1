@@ -40,29 +40,30 @@ int The_number_of_node()
 
 void Print_middle()
 {
-    node *ptr = NULL;
+	node* cur = head;
+	int count = The_number_of_node();
+	
+	if (count % 2)
+	{
+		count /= 2;
+		for (int i = 0; i < count; i++)
+		{
+			cur = cur->next;
+		}
+		printf("print middle list:%d\n", cur->value);
+	}                  //È¦¼öÀÌ¸é.
+	else
+	{
+		count = count / 2 - 1;
+		for (int i = 0; i < count; i++)
+		{
+			cur = cur->next;
+		}
+		printf("print middle list:%d %d\n", cur->value, cur->next->value);
+	}
 
-    printf("Print middle: ");
-    
-    int index = The_number_of_node() / 2;
-    if (The_number_of_node() % 2 == 1)
-    {
-        ptr = head;
-        index += 1;
-        for (int i = 1; i < index; i++)
-            ptr = ptr->next;
-        
-        printf("%d\n", ptr->value);
-    }
-    else
-    {
-        ptr = head;
-        for (int i = 1; i < index; i++)
-            ptr = ptr->next;
-        printf("%d, %d\n", ptr->value, ptr->next->value);
-    }
+
 }
-
 void Print_all()
 {
     node *ptr = NULL;
