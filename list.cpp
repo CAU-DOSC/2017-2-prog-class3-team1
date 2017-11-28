@@ -44,30 +44,29 @@ int The_number_of_node()
 
 void Print_middle()
 {
-	node* cur = head;
-	int count = The_number_of_node();
-	
-	if (count % 2)
-	{
-		count /= 2;
-		for (int i = 0; i < count; i++)
-		{
-			cur = cur->next;
-		}
-		printf("print middle list:%d\n", cur->value);
-	}                  //È¦¼öÀÌ¸é.
-	else
-	{
-		count = count / 2 - 1;
-		for (int i = 0; i < count; i++)
-		{
-			cur = cur->next;
-		}
-		printf("print middle list:%d %d\n", cur->value, cur->next->value);
-	}
+    node *ptr = NULL;
 
-
+    printf("Print middle: ");
+    
+    int index = The_number_of_node() / 2;
+    if (The_number_of_node() % 2 == 1)
+    {
+        ptr = head;
+        index += 1;
+        for (int i = 1; i < index; i++)
+            ptr = ptr->next;
+        
+        printf("%d\n", ptr->value);
+    }
+    else
+    {
+        ptr = head;
+        for (int i = 1; i < index; i++)
+            ptr = ptr->next;
+        printf("%d, %d\n", ptr->value, ptr->next->value);
+    }
 }
+
 void Print_all()
 {
     node *ptr = NULL;
@@ -103,40 +102,21 @@ void Print_rev()
 }
 
 
-void Delete_odd_node()
-{
-    node *ptr = head;
-    node *ptrtemp = NULL;
-    
-    int i = 1;
-    
-    while (ptr->next != NULL)
-    {
-        if (i == 1)
-        {
-            ptr = ptr->next;
-            head = ptr;
-        }
-        else
-        {
-            if (i % 2 == 1)
-            {
-                ptrtemp->next = ptr->next;
-                ptr = ptr->next;
-            }
-            else
-            {
-                ptrtemp = ptr;
-                ptr = ptr->next;
-            }
-        }
-        i++;
-    }
-    
-    if (i%2 ==1)
-    {
-        ptrtemp->next = NULL;
-        tail = ptr;
-        
-    }
+void Delete_odd_node(struct node* head, int index)
+ {
+	struct node *before;
+	struct node *now;
+	int i = 0;
+
+	before = now = head;
+	for (i = 0; i < index-1; i++) {
+		before = now;
+		now = now->next;
+		if (i%2 == 0) {
+			before->next = now->next;
+			free(now);
+			now = before->next;
+			i++;
+		}
+	}
 }
