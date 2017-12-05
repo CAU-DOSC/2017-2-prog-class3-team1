@@ -25,7 +25,7 @@ void reverse(char* str, int n, int d)
         for(i=swap,j=0;i<n;i++,j++)
             temp[j]=str[i];
         for(i=n-1,j=swap-1;j>=0;i--,j--)
-            str[j]=str[i];
+            str[i]=str[j];
         for(i=0;i<Dcal;i++)
             str[i]=temp[i];
         free(temp);
