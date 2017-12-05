@@ -1,6 +1,6 @@
 #include "Rotate.h"
 
-void blockswap(char* str, int n, int d)
+void reverse(char* str, int n, int d)
 {
     int i,j;
     int swap;
