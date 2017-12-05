@@ -8,7 +8,8 @@ struct data {
 	int d;
 };
 
-char* trivialrotation(char *input, int d, int n);
-char* juggling(char* str, int n, int d);
-char* blockswap(char* str, int n, int d);
-char* reverse(char* str, int n, int d);
+void trivialrotation(char *input, int d, int n);
+void leftRotate(char arr[], int d, int n);
+void blockswap(char* str, int n, int d);
+void reverse(char* str, int n, int d);
+int gcd(int a, int b);
