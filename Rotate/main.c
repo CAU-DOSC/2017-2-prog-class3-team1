@@ -1,7 +1,7 @@
 #include "Rotate.h"
 
-data gendata() {
-	data x;
+struct data gendata() {
+	struct data x;
 	//srand((unsigned)time(NULL));
 	x.n = rand() % 1000 + 1;
 	x.d = (rand() % (2*x.n) -x.n);
@@ -15,7 +15,7 @@ data gendata() {
 
 int main() {
 	double time;
-	data x = gendata();
+	struct data x = gendata();
 	printf("STRLength\t ROTATEdistance\t T.trivial\t T.juggle\t T.bw\t\t T.reverse\n");
 	printf("%d\t\t %d\t\t ",x.n, x.d);
 	
