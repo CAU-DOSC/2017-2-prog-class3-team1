@@ -1,3 +1,5 @@
+#include "Rotate.h"
+
 int gcd(int a, int b)
 {
 	int k, g = 1;
