@@ -18,21 +18,22 @@ int main() {
 	data x = gendata();
 	printf("STRLength\t ROTATEdistance\t T.trivial\t T.juggle\t T.bw\t\t T.reverse\n");
 	printf("%d\t\t %d\t\t ",x.n, x.d);
+	
 	time = clock();
 	trivialrotation(x.str, x.d, x.n);
-	printf("%lf\t ", clock() - time);
+	printf("%.3f\t\t ", (clock() - time) / CLOCKS_PER_SEC);
 
 	time = clock();
-	juggling(x.str, x.n, x.d);
-	printf("%lf\t ", clock() - time);
+	leftRotate(x.str, x.d, x.n);
+	printf("%.3f\t\t ", (clock() - time) / CLOCKS_PER_SEC);
 
 	time = clock();
 	blockswap(x.str, x.n, x.d);
-	printf("%lf\t ", clock() - time);
+	printf("%.3f\t\t ", (clock() - time) / CLOCKS_PER_SEC);
 
 	time = clock();
 	reverse(x.str, x.n, x.d);
-	printf("%lf\n", clock() - time);
+	printf("%.3f\t\t ", (clock() - time) / CLOCKS_PER_SEC);
 
 	return 0;
 }
