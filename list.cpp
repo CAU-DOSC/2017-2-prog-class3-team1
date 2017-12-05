@@ -5,7 +5,7 @@ node *tail;
 LINK createNode(int n)
 {
 	LINK cur;
-	cur = (LINK)malloc(sizeof(NODE));
+	cur = (LINK)malloc(sizeof(node));
 	cur->value = n;
 	cur->next = NULL;
 
@@ -43,8 +43,8 @@ int The_number_of_node(LINK head)
 
 void Print_middle(LINK head)
 {
-	node *cur;
-	int count = The_number_of_node(LINK head);
+	node *cur=head;
+	int count = The_number_of_node(head);
 	if (count % 2)
 	{
 		count /= 2;
@@ -53,7 +53,7 @@ void Print_middle(LINK head)
 			cur = cur->next;
 		}
 		printf("print middle:%d\n", cur->value);
-	}                  //È¦¼öÀÌ¸é.
+	}              
 	else
 	{
 		count = count / 2 - 1;
@@ -62,7 +62,7 @@ void Print_middle(LINK head)
 			cur = cur->next;
 		}
 		printf("print middle:%d %d\n", cur->value, cur->next->value);
-	}// ÇìÇì
+	}
 
 }
 void Print_all(LINK head)
@@ -82,7 +82,7 @@ void Print_all(LINK head)
 
 void Print_rev(LINK head)
 {
-    int count = The_number_of_node(LINK head);
+    int count = The_number_of_node(head);
     node *ptr = head;
     
     printf("Print revers oder: ");
