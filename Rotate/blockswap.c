@@ -4,11 +4,11 @@ void blockswap(char* str, int n, int d)
 {
     int i,j;
     int swap;
-    int *temp;
+    char *temp;
     if(d>0)
     {
         swap = n - d;
-        temp = (int*)malloc(sizeof(int)*d);
+        temp = (char*)malloc(sizeof(char)*d);
         for(i=0;i<d;i++)
             temp[i] = str[i];
         for(i=d,j=0;i<n;i++,j++)
@@ -21,7 +21,7 @@ void blockswap(char* str, int n, int d)
     {
         int Dcal=-d;
         swap = n - Dcal;
-        temp = (int*)malloc(sizeof(int)*Dcal);
+        temp = (char*)malloc(sizeof(char)*Dcal);
         for(i=swap,j=0;i<n;i++,j++)
             temp[j]=str[i];
         for(i=n-1,j=swap-1;j>=0;i--,j--)
