@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include "Rotate.h"
 
 void trivialrotation(char *input, int d, int n)
 {
